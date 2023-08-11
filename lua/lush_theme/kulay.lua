@@ -456,7 +456,7 @@ local theme = lush(function(injected_functions)
     MoonflyBlueItalic                                                                 { fg="#80a0ff", gui="italic" }, -- MoonflyBlue    xxx guifg=#80a0ff
     Directory                                                                         { MoonflyBlue }, -- Directory      xxx links to MoonflyBlue
     sym"@text.title"                                                                  { MoonflyBlueItalic }, -- @text.title    xxx links to MoonflyBlue
-    sym"@tag"                                                                         { MoonflyBlueItalic }, -- @tag           xxx links to MoonflyBlue
+    sym"@tag"                                                                         { MoonflyBlue }, -- @tag           xxx links to MoonflyBlue
     CmpItemKindFile                                                                   { MoonflyBlue }, -- CmpItemKindFile xxx links to MoonflyBlue
     CmpItemKindFolder                                                                 { MoonflyBlue }, -- CmpItemKindFolder xxx links to MoonflyBlue
     healthHeadingChar                                                                 { MoonflyBlue }, -- healthHeadingChar xxx links to MoonflyBlue
