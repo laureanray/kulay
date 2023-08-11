@@ -4,7 +4,7 @@
 local lush = require("lush")
 local hsl = lush.hsl
 local hsluv = lush.hsluv
-local Statement = { fg = hsl('#fafafa'), gui = "bold" } 
+local white = hsl('#dedede')
 local theme = lush(function(injected_functions)
   local sym = injected_functions.sym
   return {
@@ -134,7 +134,7 @@ local theme = lush(function(injected_functions)
     sym"@text.todo"                                                                   { Todo }, -- @text.todo     xxx links to Todo
     sym"@danger"                                                                      { Todo }, -- @danger        xxx links to Todo
     luaTodo                                                                           { Todo }, -- luaTodo        xxx links to Todo
-    String                                                                            { fg="#c2c292", }, -- String         xxx guifg=#c2c292
+    String                                                                            { fg=white, }, -- String         xxx guifg=#c2c292
     sym"@text.literal"                                                                { String }, -- @text.literal  xxx links to String
     sym"@string"                                                                      { String }, -- @string        xxx links to String
     NvimString                                                                        { String }, -- NvimString     xxx links to String
