@@ -153,7 +153,7 @@ local theme = lush(function(injected_functions)
     luaMetaMethod                                                                     { Function }, -- luaMetaMethod  xxx links to Function
     luaFunction                                                                       { Function }, -- luaFunction    xxx links to Function
     Identifier                                                                        { fg="#79dac8", }, -- Identifier     xxx guifg=#79dac8
-    IdentifierItalic                                                                  { fg="#79dac8", gui = "italic" }, -- Identifier     xxx guifg=#79dac8
+    IdentifierItalic                                                                  { fg="#cccccc", gui = "italic" }, -- Identifier     xxx guifg=#79dac8
     sym"@field"                                                                       { IdentifierItalic }, -- @field         xxx links to Identifier
     NvimIdentifier                                                                    { IdentifierItalic }, -- NvimIdentifier xxx links to Identifier
     netrwVersion                                                                      { Identifier }, -- netrwVersion   xxx links to Identifier
