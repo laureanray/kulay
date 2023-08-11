@@ -521,7 +521,7 @@ local theme = lush(function(injected_functions)
     MiniStarterQuery                                                                  { MoonflySky }, -- MiniStarterQuery xxx links to MoonflySky
     NeogitBranch                                                                      { MoonflySky }, -- NeogitBranch   xxx links to MoonflySky
     MoonflyTurquoise                                                                  { fg="#79dac8", }, -- MoonflyTurquoise xxx guifg=#79dac8
-    MoonflyTurquoiseItalic                                                            { fg="#cccccc", gui="italic" }, -- MoonflyTurquoise xxx guifg=#79dac8
+    MoonflyTurquoiseItalic                                                            { fg="#cccccc" }, -- MoonflyTurquoise xxx guifg=#79dac8
     Label                                                                             { MoonflyTurquoise }, -- Label          xxx links to MoonflyTurquoise
     sym"@constant"                                                                    { MoonflyTurquoiseItalic }, -- @constant      xxx links to MoonflyTurquoise
     sym"@property"                                                                    { MoonflyTurquoiseItalic }, -- @property      xxx links to MoonflyTurquoise
