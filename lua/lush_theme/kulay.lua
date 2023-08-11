@@ -152,7 +152,7 @@ local theme = lush(function(injected_functions)
     netrwHelpCmd                                                                      { Function }, -- netrwHelpCmd   xxx links to Function
     luaMetaMethod                                                                     { Function }, -- luaMetaMethod  xxx links to Function
     luaFunction                                                                       { Function }, -- luaFunction    xxx links to Function
-    Identifier                                                                        { fg="#79dac8", }, -- Identifier     xxx guifg=#79dac8
+    Identifier                                                                        { fg="#cccccc", }, -- Identifier     xxx guifg=#79dac8
     sym"@lsp.type.property.lua"                                                       { fg="#cccccc",},
     IdentifierItalic                                                                  { fg="#cccccc", gui = "italic" }, -- Identifier     xxx guifg=#79dac8
     sym"@field"                                                                       { IdentifierItalic }, -- @field         xxx links to Identifier
