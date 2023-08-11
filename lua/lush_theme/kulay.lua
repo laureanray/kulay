@@ -182,7 +182,7 @@ local theme = lush(function(injected_functions)
     Macro                                                                             { PreProc }, -- Macro          xxx links to PreProc
     PreCondit                                                                         { PreProc }, -- PreCondit      xxx links to PreProc
     sym"@preproc"                                                                     { PreProc }, -- @preproc       xxx links to PreProc
-    Type                                                                              { fg="#36c692", gui="italic" }, -- Type           xxx guifg=#36c692
+    Type                                                                              { fg="#36c692" }, -- Type           xxx guifg=#36c692
     Typedef                                                                           { Type }, -- Typedef        xxx links to Type
     sym"@type"                                                                        { Type }, -- @type          xxx links to Type
     sym"@lsp.type.type"                                                               { Type }, -- @lsp.type.type xxx links to Type
