@@ -153,8 +153,9 @@ local theme = lush(function(injected_functions)
     luaMetaMethod                                                                     { Function }, -- luaMetaMethod  xxx links to Function
     luaFunction                                                                       { Function }, -- luaFunction    xxx links to Function
     Identifier                                                                        { fg="#79dac8", }, -- Identifier     xxx guifg=#79dac8
-    sym"@field"                                                                       { Identifier }, -- @field         xxx links to Identifier
-    NvimIdentifier                                                                    { Identifier }, -- NvimIdentifier xxx links to Identifier
+    IdentifierItalic                                                                  { fg="#79dac8", gui = "italic" }, -- Identifier     xxx guifg=#79dac8
+    sym"@field"                                                                       { IdentifierItalic }, -- @field         xxx links to Identifier
+    NvimIdentifier                                                                    { IdentifierItalic }, -- NvimIdentifier xxx links to Identifier
     netrwVersion                                                                      { Identifier }, -- netrwVersion   xxx links to Identifier
     luaFunc                                                                           { Identifier }, -- luaFunc        xxx links to Identifier
     Conditional                                                                       { fg="#cf87e8", }, -- Conditional    xxx guifg=#cf87e8
@@ -517,10 +518,11 @@ local theme = lush(function(injected_functions)
     MiniStarterQuery                                                                  { MoonflySky }, -- MiniStarterQuery xxx links to MoonflySky
     NeogitBranch                                                                      { MoonflySky }, -- NeogitBranch   xxx links to MoonflySky
     MoonflyTurquoise                                                                  { fg="#79dac8", }, -- MoonflyTurquoise xxx guifg=#79dac8
+    MoonflyTurquoiseItalic                                                            { fg="#79dac8", gui="italic" }, -- MoonflyTurquoise xxx guifg=#79dac8
     Label                                                                             { MoonflyTurquoise }, -- Label          xxx links to MoonflyTurquoise
-    sym"@constant"                                                                    { MoonflyTurquoise }, -- @constant      xxx links to MoonflyTurquoise
-    sym"@property"                                                                    { MoonflyTurquoise }, -- @property      xxx links to MoonflyTurquoise
-    sym"@namespace"                                                                   { MoonflyTurquoise }, -- @namespace     xxx links to MoonflyTurquoise
+    sym"@constant"                                                                    { MoonflyTurquoiseItalic }, -- @constant      xxx links to MoonflyTurquoise
+    sym"@property"                                                                    { MoonflyTurquoiseItalic }, -- @property      xxx links to MoonflyTurquoise
+    sym"@namespace"                                                                   { MoonflyTurquoiseItalic }, -- @namespace     xxx links to MoonflyTurquoise
     CmpItemKindField                                                                  { MoonflyTurquoise }, -- CmpItemKindField xxx links to MoonflyTurquoise
     CmpItemKindProperty                                                               { MoonflyTurquoise }, -- CmpItemKindProperty xxx links to MoonflyTurquoise
     CmpItemKindReference                                                              { MoonflyTurquoise }, -- CmpItemKindReference xxx links to MoonflyTurquoise
