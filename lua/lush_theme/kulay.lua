@@ -508,6 +508,7 @@ local theme = lush(function(injected_functions)
     sym"@keyword.gitcommit"                                                           { MoonflySky }, -- @keyword.gitcommit xxx links to MoonflySky
     sym"@text.title.help"                                                             { MoonflySky }, -- @text.title.help xxx links to MoonflySky
     gitCommitBranch                                                                   { MoonflySky }, -- gitCommitBranch xxx links to MoonflySky
+    gitCommitSummary  { MoonflySky },
     gitCommitDiscardedType                                                            { MoonflySky }, -- gitCommitDiscardedType xxx links to MoonflySky
     gitCommitSelectedType                                                             { MoonflySky }, -- gitCommitSelectedType xxx links to MoonflySky
     diffLine                                                                          { MoonflySky }, -- diffLine       xxx links to MoonflySky
