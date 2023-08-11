@@ -309,7 +309,7 @@ local theme = lush(function(injected_functions)
     FernMarkedLine                                                                    { MoonflyVisual }, -- FernMarkedLine xxx links to MoonflyVisual
     TelescopePreviewMatch                                                             { MoonflyVisual }, -- TelescopePreviewMatch xxx links to MoonflyVisual
     MiniCompletionActiveParameter                                                     { MoonflyVisual }, -- MiniCompletionActiveParameter xxx links to MoonflyVisual
-    MoonflyWhite                                                                      { fg="#c6c6c6", gui="bold" }, -- MoonflyWhite   xxx guifg=#c6c6c6
+    MoonflyWhite                                                                      { fg="#c6c6c6" }, -- MoonflyWhite   xxx guifg=#c6c6c6
     Delimiter                                                                         { MoonflyWhite }, -- Delimiter      xxx links to MoonflyWhite
     DiagnosticHint                                                                    { MoonflyWhite }, -- DiagnosticHint xxx links to MoonflyWhite
     DiagnosticFloatingHint                                                            { MoonflyWhite }, -- DiagnosticFloatingHint xxx links to MoonflyWhite
