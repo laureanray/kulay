@@ -8,10 +8,10 @@ local white = hsl('#dedede')
 local theme = lush(function(injected_functions)
   local sym = injected_functions.sym
   return {
-    SpecialKey                                                                        { bg="#080808", fg="#74b2ff", }, -- SpecialKey     xxx guifg=#74b2ff guibg=#080808
-    EndOfBuffer                                                                       { fg="#626262", }, -- EndOfBuffer    xxx guifg=#626262
-    DapUIEndofBuffer                                                                  { EndOfBuffer }, -- DapUIEndofBuffer xxx links to EndOfBuffer
-    TermCursor                                                                        { bg="#9e9e9e", fg="#080808", }, -- TermCursor     xxx guifg=#080808 guibg=#9e9e9e
+    SpecialKey { bg="#080808", fg="#74b2ff", }, 
+    EndOfBuffer { fg="#626262", }, 
+    DapUIEndofBuffer { EndOfBuffer }, 
+    TermCursor { bg="#9e9e9e", fg="#080808", }, 
     NonText                                                                           { fg="#626262", }, -- NonText        xxx guifg=#626262
     ErrorMsg                                                                          { bg="#080808", fg="#ff5454", }, -- ErrorMsg       xxx guifg=#ff5454 guibg=#080808
     NvimInvalidSpacing                                                                { ErrorMsg }, -- NvimInvalidSpacing xxx links to ErrorMsg
@@ -181,7 +181,7 @@ local theme = lush(function(injected_functions)
     Macro                                                                             { PreProc }, -- Macro          xxx links to PreProc
     PreCondit                                                                         { PreProc }, -- PreCondit      xxx links to PreProc
     sym"@preproc"                                                                     { PreProc }, -- @preproc       xxx links to PreProc
-    Type                                                                              { fg="#36c692", }, -- Type           xxx guifg=#36c692
+    Type                                                                              { fg="#36c692", gui="italic" }, -- Type           xxx guifg=#36c692
     Typedef                                                                           { Type }, -- Typedef        xxx links to Type
     sym"@type"                                                                        { Type }, -- @type          xxx links to Type
     sym"@lsp.type.type"                                                               { Type }, -- @lsp.type.type xxx links to Type
@@ -308,7 +308,7 @@ local theme = lush(function(injected_functions)
     FernMarkedLine                                                                    { MoonflyVisual }, -- FernMarkedLine xxx links to MoonflyVisual
     TelescopePreviewMatch                                                             { MoonflyVisual }, -- TelescopePreviewMatch xxx links to MoonflyVisual
     MiniCompletionActiveParameter                                                     { MoonflyVisual }, -- MiniCompletionActiveParameter xxx links to MoonflyVisual
-    MoonflyWhite                                                                      { fg="#c6c6c6", }, -- MoonflyWhite   xxx guifg=#c6c6c6
+    MoonflyWhite                                                                      { fg="#c6c6c6" }, -- MoonflyWhite   xxx guifg=#c6c6c6
     Delimiter                                                                         { MoonflyWhite }, -- Delimiter      xxx links to MoonflyWhite
     DiagnosticHint                                                                    { MoonflyWhite }, -- DiagnosticHint xxx links to MoonflyWhite
     DiagnosticFloatingHint                                                            { MoonflyWhite }, -- DiagnosticFloatingHint xxx links to MoonflyWhite
@@ -488,7 +488,8 @@ local theme = lush(function(injected_functions)
     NoiceCmdlinePrompt                                                                { MoonflyBlue }, -- NoiceCmdlinePrompt xxx links to MoonflyBlue
     NoiceConfirmBorder                                                                { MoonflyBlue }, -- NoiceConfirmBorder xxx links to MoonflyBlue
     RainbowDelimiterBlue                                                              { MoonflyBlue }, -- RainbowDelimiterBlue xxx links to MoonflyBlue
-    MoonflySky                                                                        { fg="#74b2ff", }, -- MoonflySky     xxx guifg=#74b2ff
+    MoonflySky                                                                        { fg="#82cfff", }, -- MoonflySky     xxx guifg=#74b2ff
+    MoonflySkyItalic                                                                  { fg="#82cfff", gui="italic"}, -- MoonflySky     xxx guifg=#74b2ff
     DiagnosticInfo                                                                    { MoonflySky }, -- DiagnosticInfo xxx links to MoonflySky
     DiagnosticFloatingInfo                                                            { MoonflySky }, -- DiagnosticFloatingInfo xxx links to MoonflySky
     DiagnosticSignInfo                                                                { MoonflySky }, -- DiagnosticSignInfo xxx links to MoonflySky
@@ -498,7 +499,7 @@ local theme = lush(function(injected_functions)
     CmpItemKindConstructor                                                            { MoonflySky }, -- CmpItemKindConstructor xxx links to MoonflySky
     CmpItemKindFunction                                                               { MoonflySky }, -- CmpItemKindFunction xxx links to MoonflySky
     CmpItemKindMethod                                                                 { MoonflySky }, -- CmpItemKindMethod xxx links to MoonflySky
-    sym"@attribute"                                                                   { MoonflySky }, -- @attribute     xxx links to MoonflySky
+    sym"@attribute"                                                                   { MoonflySkyItalic }, -- @attribute     xxx links to MoonflySky
     sym"@function.call"                                                               { MoonflySky }, -- @function.call xxx links to MoonflySky
     sym"@keyword.gitcommit"                                                           { MoonflySky }, -- @keyword.gitcommit xxx links to MoonflySky
     sym"@text.title.help"                                                             { MoonflySky }, -- @text.title.help xxx links to MoonflySky
@@ -568,9 +569,10 @@ local theme = lush(function(injected_functions)
     OutlineIndent                                                                     { MoonflyPurple }, -- OutlineIndent  xxx links to MoonflyPurple
     NeogitRemote                                                                      { MoonflyPurple }, -- NeogitRemote   xxx links to MoonflyPurple
     MoonflyCranberry                                                                  { fg="#e65e72", }, -- MoonflyCranberry xxx guifg=#e65e72
+    MoonflyCranberryBold                                                              { fg="#e65e72", gui="bold"}, -- MoonflyCranberry xxx guifg=#e65e72
     Boolean                                                                           { MoonflyCranberry }, -- Boolean        xxx links to MoonflyCranberry
-    sym"@include"                                                                     { MoonflyCranberry }, -- @include       xxx links to MoonflyCranberry
-    sym"@punctuation.special"                                                         { MoonflyCranberry }, -- @punctuation.special xxx links to MoonflyCranberry
+    sym"@include"                                                                     { MoonflyCranberryBold }, -- @include       xxx links to MoonflyCranberry
+    sym"@punctuation.special"                                                         { MoonflyCranberryBold }, -- @punctuation.special xxx links to MoonflyCranberry
     sym"@text.environment"                                                            { MoonflyCranberry }, -- @text.environment xxx links to MoonflyCranberry
     sym"@text.math"                                                                   { MoonflyCranberry }, -- @text.math     xxx links to MoonflyCranberry
     sym"@punctuation.delimiter.astro"                                                 { MoonflyCranberry }, -- @punctuation.delimiter.astro xxx links to MoonflyCranberry
