@@ -410,7 +410,7 @@ local theme = lush(function(injected_functions)
     sym"@text.strong"                                                                 { MoonflyOrchid }, -- @text.strong   xxx links to MoonflyOrchid
     markdownItalic                                                                    { MoonflyOrchid }, -- markdownItalic xxx links to MoonflyOrchid
     LazyReasonPlugin                                                                  { MoonflyOrchid }, -- LazyReasonPlugin xxx links to MoonflyOrchid
-    MoonflyLime                                                                       { fg="#85dc85", }, -- MoonflyLime    xxx guifg=#85dc85
+    MoonflyLime                                                                       { fg="#85dc85", gui="bold"}, -- MoonflyLime    xxx guifg=#85dc85
     sym"@tag.delimiter"                                                               { MoonflyLime }, -- @tag.delimiter xxx links to MoonflyLime
     sym"@variable.builtin"                                                            { MoonflyLime }, -- @variable.builtin xxx links to MoonflyLime
     xmlAttrib                                                                         { MoonflyLime }, -- xmlAttrib      xxx links to MoonflyLime
@@ -430,6 +430,7 @@ local theme = lush(function(injected_functions)
     CodeActionConceal                                                                 { MoonflyGreen }, -- CodeActionConceal xxx links to MoonflyGreen
     RainbowDelimiterGreen                                                             { MoonflyGreen }, -- RainbowDelimiterGreen xxx links to MoonflyGreen
     MoonflyEmerald                                                                    { fg="#36c692", }, -- MoonflyEmerald xxx guifg=#36c692
+    MoonflyEmeraldItalic                                                              { fg="#36c692", gui="italic"}, -- MoonflyEmerald xxx guifg=#36c692
     sym"@constructor"                                                                 { MoonflyEmerald }, -- @constructor   xxx links to MoonflyEmerald
     CmpItemKindStruct                                                                 { MoonflyEmerald }, -- CmpItemKindStruct xxx links to MoonflyEmerald
     CmpItemKindClass                                                                  { MoonflyEmerald }, -- CmpItemKindClass xxx links to MoonflyEmerald
@@ -437,10 +438,10 @@ local theme = lush(function(injected_functions)
     CmpItemKindInterface                                                              { MoonflyEmerald }, -- CmpItemKindInterface xxx links to MoonflyEmerald
     CmpItemKindTypeParameter                                                          { MoonflyEmerald }, -- CmpItemKindTypeParameter xxx links to MoonflyEmerald
     qfFileName                                                                        { MoonflyEmerald }, -- qfFileName     xxx links to MoonflyEmerald
-    sym"@text.environment.name"                                                       { MoonflyEmerald }, -- @text.environment.name xxx links to MoonflyEmerald
-    sym"@type.builtin"                                                                { MoonflyEmerald }, -- @type.builtin  xxx links to MoonflyEmerald
-    sym"@text.uri.gitcommit"                                                          { MoonflyEmerald }, -- @text.uri.gitcommit xxx links to MoonflyEmerald
-    sym"@variable.builtin.vim"                                                        { MoonflyEmerald }, -- @variable.builtin.vim xxx links to MoonflyEmerald
+    sym"@text.environment.name"                                                       { MoonflyEmeraldItalic }, -- @text.environment.name xxx links to MoonflyEmerald
+    sym"@type.builtin"                                                                { MoonflyEmeraldItalic }, -- @type.builtin  xxx links to MoonflyEmerald
+    sym"@text.uri.gitcommit"                                                          { MoonflyEmeraldItalic }, -- @text.uri.gitcommit xxx links to MoonflyEmerald
+    sym"@variable.builtin.vim"                                                        { MoonflyEmeraldItalic }, -- @variable.builtin.vim xxx links to MoonflyEmerald
     gitCommitSelectedFile                                                             { MoonflyEmerald }, -- gitCommitSelectedFile xxx links to MoonflyEmerald
     TagbarKind                                                                        { MoonflyEmerald }, -- TagbarKind     xxx links to MoonflyEmerald
     FernGitStatusIndex                                                                { MoonflyEmerald }, -- FernGitStatusIndex xxx links to MoonflyEmerald
