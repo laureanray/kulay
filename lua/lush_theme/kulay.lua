@@ -73,14 +73,14 @@ local theme = lush(function(injected_functions)
     -- FloatBorder    { }, -- Border of floating windows.
     -- FloatTitle     { }, -- Title of floating windows.
     -- NormalNC       { }, -- normal text in non-current windows
-    -- Pmenu          { }, -- Popup menu: Normal item.
-    -- PmenuSel       { }, -- Popup menu: Selected item.
-    -- PmenuKind      { }, -- Popup menu: Normal item "kind"
-    -- PmenuKindSel   { }, -- Popup menu: Selected item "kind"
-    -- PmenuExtra     { }, -- Popup menu: Normal item "extra text"
-    -- PmenuExtraSel  { }, -- Popup menu: Selected item "extra text"
-    -- PmenuSbar      { }, -- Popup menu: Scrollbar.
-    -- PmenuThumb     { }, -- Popup menu: Thumb of the scrollbar.
+    Pmenu          { bg = light_black }, -- Popup menu: Normal item.
+    PmenuSel       { bg = light_black }, -- Popup menu: Selected item.
+    PmenuKind      { bg = light_black }, -- Popup menu: Normal item "kind"
+    PmenuKindSel   { bg = light_black }, -- Popup menu: Selected item "kind"
+    PmenuExtra     { bg = light_black }, -- Popup menu: Normal item "extra text"
+    PmenuExtraSel  { bg = light_black }, -- Popup menu: Selected item "extra text"
+    PmenuSbar      { bg = light_black }, -- Popup menu: Scrollbar.
+    PmenuThumb     { bg = light_black }, -- Popup menu: Thumb of the scrollbar.
     -- Question       { }, -- |hit-enter| prompt and yes/no questions
     -- QuickFixLine   { }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
     -- Search         { }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
@@ -143,12 +143,12 @@ local theme = lush(function(injected_functions)
     Structure      { fg = green }, --   struct, union, enum, etc.
     Typedef        { fg = green }, --   A typedef
 
-    -- Special        { }, -- (*) Any special symbol
-    -- SpecialChar    { }, --   Special character in a constant
-    -- Tag            { }, --   You can use CTRL-] on this
-    -- Delimiter      { }, --   Character that needs attention
-    -- SpecialComment { }, --   Special things inside a comment (e.g. '\n')
-    -- Debug          { }, --   Debugging statements
+    Special        { fg = ube }, -- (*) Any special symbol
+    SpecialChar    { fg = ube }, --   Special character in a constant
+    Tag            { fg = ube }, --   You can use CTRL-] on this
+    Delimiter      { fg = ube }, --   Character that needs attention
+    SpecialComment { fg = ube }, --   Special things inside a comment (e.g. '\n')
+    Debug          { fg = ube }, --   Debugging statements
 
     -- Underlined     { gui = "underline" }, -- Text that stands out, HTML links
     -- Ignore         { }, -- Left blank, hidden |hl-Ignore| (NOTE: May be invisible here in template)
