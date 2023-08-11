@@ -1,47 +1,3 @@
---
--- Built with,
---
---        ,gggg,
---       d8" "8I                         ,dPYb,
---       88  ,dP                         IP'`Yb
---    8888888P"                          I8  8I
---       88                              I8  8'
---       88        gg      gg    ,g,     I8 dPgg,
---  ,aa,_88        I8      8I   ,8'8,    I8dP" "8I
--- dP" "88P        I8,    ,8I  ,8'  Yb   I8P    I8
--- Yb,_,d88b,,_   ,d8b,  ,d8b,,8'_   8) ,d8     I8,
---  "Y8P"  "Y888888P'"Y88P"`Y8P' "YY8P8P88P     `Y8
---
-
--- This is a starter colorscheme for use with Lush,
--- for usage guides, see :h lush or :LushRunTutorial
-
---
--- Note: Because this is a lua file, vim will append it to the runtime,
---       which means you can require(...) it in other lua code (this is useful),
---       but you should also take care not to conflict with other libraries.
---
---       (This is a lua quirk, as it has somewhat poor support for namespacing.)
---
---       Basically, name your file,
---
---       "super_theme/lua/lush_theme/super_theme_dark.lua",
---
---       not,
---
---       "super_theme/lua/dark.lua".
---
---       With that caveat out of the way...
---
-
--- Enable lush.ify on this file, run:
---
---  `:Lushify`
---
---  or
---
---  `:lua require('lush').ify()`
-
 local lush = require('lush')
 local hsl = lush.hsl
 
@@ -49,13 +5,20 @@ local hsl = lush.hsl
 -- support an annotation like the following. Consult your server documentation.
 ---@diagnostic disable: undefined-global
 ---
-local base = hsl('#dedede')
+local base = hsl('#d0d0d0')
 local muted = hsl('#888888')
 local bg = hsl('#080808')
 local err = hsl('#ee5396')
-local key = hsl('#ffab91')
+local pink = hsl('#ff7eb6')
+local orange = hsl('#ffab91')
+local dark_orange = hsl('#ff6f00')
+local key = hsl('#f2f2f2')
 local blue = hsl('#33b1ff')
 local sky_blue = hsl('#82cfff')
+local ube = hsl('#be95ff')
+local cyan = hsl('#08bdba')
+local light_black = hsl('#141414')
+local green = hsl('#42be65')
 
 local theme = lush(function(injected_functions)
   local sym = injected_functions.sym
@@ -70,17 +33,17 @@ local theme = lush(function(injected_functions)
     --
     -- See :h highlight-groups
     --
-    -- ColorColumn    { }, -- Columns set with 'colorcolumn'
-    -- Conceal        { }, -- Placeholder characters substituted for concealed text (see 'conceallevel')
-    -- Cursor         { }, -- Character under the cursor
-    -- CurSearch      { }, -- Highlighting a search pattern under the cursor (see 'hlsearch')
-    -- lCursor        { }, -- Character under the cursor when |language-mapping| is used (see 'guicursor')
-    -- CursorIM       { }, -- Like Cursor, but used when in IME mode |CursorIM|
-    -- CursorColumn   { }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
-    -- CursorLine     { }, -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
-    -- Directory      { }, -- Directory names (and other special names in listings)
-    -- DiffAdd        { }, -- Diff mode: Added line |diff.txt|
-    -- DiffChange     { }, -- Diff mode: Changed line |diff.txt|
+    ColorColumn    { fg = base }, -- Columns set with 'colorcolumn'
+    Conceal        { fg = base }, -- Placeholder characters substituted for concealed text (see 'conceallevel')
+    Cursor         { fg = base }, -- Character under the cursor
+    CurSearch      { fg = base }, -- Highlighting a search pattern under the cursor (see 'hlsearch')
+    lCursor        { fg = base }, -- Character under the cursor when |language-mapping| is used (see 'guicursor')
+    CursorIM       { fg = base }, -- Like Cursor, but used when in IME mode |CursorIM|
+    CursorColumn   { fg = base }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
+    CursorLine     { bg = light_black  }, -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
+    Directory      { fg = base }, -- Directory names (and other special names in listings)
+    DiffAdd        { fg = green }, -- Diff mode: Added line |diff.txt|
+    DiffChange     { fg = orange }, -- Diff mode: Changed line |diff.txt|
     -- DiffDelete     { }, -- Diff mode: Deleted line |diff.txt|
     -- DiffText       { }, -- Diff mode: Changed text within a changed line |diff.txt|
     -- EndOfBuffer    { }, -- Filler lines (~) after the end of the buffer. By default, this is highlighted like |hl-NonText|.
@@ -149,36 +112,36 @@ local theme = lush(function(injected_functions)
     --
     -- Uncomment and edit if you want more specific syntax highlighting.
 
-    Comment        { fg = base }, -- Any comment
+    Comment        { fg = muted }, -- Any comment
 
     -- Constant       { }, -- (*) Any constant
-    -- String         { }, --   A string constant: "this is a string"
+    String         { fg = base }, --   A string constant: "this is a string"
     -- Character      { }, --   A character constant: 'c', '\n'
     -- Number         { }, --   A number constant: 234, 0xff
     -- Boolean        { }, --   A boolean constant: TRUE, false
     -- Float          { }, --   A floating point constant: 2.3e10
 
-    -- Identifier     { }, -- (*) Any variable name
-    -- Function       { }, --   Function name (also: methods for classes)
+    Identifier     { fg = base, gui = "bold"}, -- (*) Any variable name
+    Function       { fg = base, gui = "bold"}, --   Function name (also: methods for classes)
 
-    -- Statement      { }, -- (*) Any statement
-    -- Conditional    { }, --   if, then, else, endif, switch, etc.
-    -- Repeat         { }, --   for, do, while, etc.
-    -- Label          { }, --   case, default, etc.
-    -- Operator       { }, --   "sizeof", "+", "*", etc.
-    Keyword        { fg = key }, --   any other keyword
+    Statement      { fg = pink }, -- (*) Any statement
+    Conditional    { fg = pink }, --   if, then, else, endif, switch, etc.
+    Repeat         { fg = pink }, --   for, do, while, etc.
+    Label          { fg = pink }, --   case, default, etc.
+    Operator       { fg = pink }, --   "sizeof", "+", "*", etc.
+    Keyword        { fg = key , gui = "bold"}, --   any other keyword
     -- Exception      { }, --   try, catch, throw
 
-    -- PreProc        { }, -- (*) Generic Preprocessor
-    -- Include        { }, --   Preprocessor #include
-    -- Define         { }, --   Preprocessor #define
-    -- Macro          { }, --   Same as Define
-    -- PreCondit      { }, --   Preprocessor #if, #else, #endif, etc.
+    PreProc        { fg = err }, -- (*) Generic Preprocessor
+    Include        { fg = err }, --   Preprocessor #include
+    Define         { fg = err }, --   Preprocessor #define
+    Macro          { fg = err }, --   Same as Define
+    PreCondit      { fg = err }, --   Preprocessor #if, #else, #endif, etc.
 
-    -- Type           { }, -- (*) int, long, char, etc.
-    -- StorageClass   { }, --   static, register, volatile, etc.
-    -- Structure      { }, --   struct, union, enum, etc.
-    -- Typedef        { }, --   A typedef
+    Type           { fg = green }, -- (*) int, long, char, etc.
+    StorageClass   { fg = green }, --   static, register, volatile, etc.
+    Structure      { fg = green }, --   struct, union, enum, etc.
+    Typedef        { fg = green }, --   A typedef
 
     -- Special        { }, -- (*) Any special symbol
     -- SpecialChar    { }, --   Special character in a constant
