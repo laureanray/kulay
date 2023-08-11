@@ -441,7 +441,7 @@ local theme = lush(function(injected_functions)
     CmpItemKindTypeParameter                                                          { MoonflyEmerald }, -- CmpItemKindTypeParameter xxx links to MoonflyEmerald
     qfFileName                                                                        { MoonflyEmerald }, -- qfFileName     xxx links to MoonflyEmerald
     sym"@text.environment.name"                                                       { MoonflyEmeraldItalic }, -- @text.environment.name xxx links to MoonflyEmerald
-    sym"@type.builtin"                                                                { MoonflyEmeraldItalic }, -- @type.builtin  xxx links to MoonflyEmerald
+    sym"@type.builtin"                                                                { MoonflyEmerald }, -- @type.builtin  xxx links to MoonflyEmerald
     sym"@text.uri.gitcommit"                                                          { MoonflyEmeraldItalic }, -- @text.uri.gitcommit xxx links to MoonflyEmerald
     sym"@variable.builtin.vim"                                                        { MoonflyEmeraldItalic }, -- @variable.builtin.vim xxx links to MoonflyEmerald
     gitCommitSelectedFile                                                             { MoonflyEmerald }, -- gitCommitSelectedFile xxx links to MoonflyEmerald
