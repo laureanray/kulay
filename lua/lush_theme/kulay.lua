@@ -17,7 +17,7 @@ local blue = hsl('#33b1ff')
 local sky_blue = hsl('#82cfff')
 local ube = hsl('#be95ff')
 local cyan = hsl('#08bdba')
-local light_black = hsl('#141414')
+local light_black = hsl('#202020')
 local green = hsl('#42be65')
 
 local theme = lush(function(injected_functions)
@@ -44,7 +44,7 @@ local theme = lush(function(injected_functions)
     Directory      { fg = base }, -- Directory names (and other special names in listings)
     DiffAdd        { fg = green }, -- Diff mode: Added line |diff.txt|
     DiffChange     { fg = orange }, -- Diff mode: Changed line |diff.txt|
-    -- DiffDelete     { }, -- Diff mode: Deleted line |diff.txt|
+    DiffDelete     { fg = err }, -- Diff mode: Deleted line |diff.txt|
     -- DiffText       { }, -- Diff mode: Changed text within a changed line |diff.txt|
     -- EndOfBuffer    { }, -- Filler lines (~) after the end of the buffer. By default, this is highlighted like |hl-NonText|.
     -- TermCursor     { }, -- Cursor in a focused terminal
@@ -114,15 +114,15 @@ local theme = lush(function(injected_functions)
 
     Comment        { fg = muted }, -- Any comment
 
-    -- Constant       { }, -- (*) Any constant
-    String         { fg = base }, --   A string constant: "this is a string"
-    -- Character      { }, --   A character constant: 'c', '\n'
-    -- Number         { }, --   A number constant: 234, 0xff
-    -- Boolean        { }, --   A boolean constant: TRUE, false
-    -- Float          { }, --   A floating point constant: 2.3e10
+    Constant       { fg = ube }, -- (*) Any constant
+    String         { fg = ube }, --   A string constant: "this is a string"
+    Character      { fg = ube }, --   A character constant: 'c', '\n'
+    Number         { fg = ube }, --   A number constant: 234, 0xff
+    Boolean        { fg = ube }, --   A boolean constant: TRUE, false
+    Float          { fg = ube }, --   A floating point constant: 2.3e10
 
     Identifier     { fg = base, gui = "bold"}, -- (*) Any variable name
-    Function       { fg = base, gui = "bold"}, --   Function name (also: methods for classes)
+    Function       { fg = ube, gui = "bold"}, --   Function name (also: methods for classes)
 
     Statement      { fg = pink }, -- (*) Any statement
     Conditional    { fg = pink }, --   if, then, else, endif, switch, etc.
