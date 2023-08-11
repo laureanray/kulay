@@ -143,7 +143,7 @@ local theme = lush(function(injected_functions)
     Constant                                                                          { fg="#de935f", }, -- Constant       xxx guifg=#de935f
     Number                                                                            { Constant }, -- Number         xxx links to Constant
     luaConstant                                                                       { Constant }, -- luaConstant    xxx links to Constant
-    Function                                                                          { fg="#74b2ff", gui = "bold" }, -- Function       xxx guifg=#74b2ff
+    Function                                                                          { fg="#74b2ff", gui = "bold,italic" }, -- Function       xxx guifg=#74b2ff
     sym"@function"                                                                    { Function }, -- @function      xxx links to Function
     sym"@method"                                                                      { Function }, -- @method        xxx links to Function
     sym"@lsp.type.decorator"                                                          { Function }, -- @lsp.type.decorator xxx links to Function
