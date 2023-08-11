@@ -162,7 +162,7 @@ local theme = lush(function(injected_functions)
     luaCondElse                                                                       { Conditional }, -- luaCondElse    xxx links to Conditional
     luaCond                                                                           { Conditional }, -- luaCond        xxx links to Conditional
     Statement                                                                         { fg="#cf87e8", }, -- Statement      xxx guifg=#cf87e8
-    Keyword                                                                           { Statement }, -- Keyword        xxx links to Statement
+    Keyword                                                                           { fg="#cf87e8", gui="bold" }, -- Keyword        xxx links to Statement
     netrwHidePat                                                                      { Statement }, -- netrwHidePat   xxx links to Statement
     netrwList                                                                         { Statement }, -- netrwList      xxx links to Statement
     luaStatement                                                                      { Statement }, -- luaStatement   xxx links to Statement
