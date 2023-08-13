@@ -555,7 +555,7 @@ local theme = lush(function(injected_functions)
     FinderIcon                                                                        { MoonflyTurquoise }, -- FinderIcon     xxx links to MoonflyTurquoise
     NoiceCompletionItemKindDefault                                                    { MoonflyTurquoise }, -- NoiceCompletionItemKindDefault xxx links to MoonflyTurquoise
     RainbowDelimiterCyan                                                              { MoonflyTurquoise }, -- RainbowDelimiterCyan xxx links to MoonflyTurquoise
-    MoonflyPurple                                                                     { fg="#ae81ff", }, -- MoonflyPurple  xxx guifg=#ae81ff
+    MoonflyPurple                                                                     { fg="#be95ff", }, -- MoonflyPurple  xxx guifg=#ae81ff
     Character                                                                         { MoonflyPurple }, -- Character      xxx links to MoonflyPurple
     sym"@text.uri"                                                                    { MoonflyPurple }, -- @text.uri      xxx links to MoonflyPurple
     CmpItemKindConstant                                                               { MoonflyPurple }, -- CmpItemKindConstant xxx links to MoonflyPurple
@@ -617,7 +617,7 @@ local theme = lush(function(injected_functions)
     FinderType                                                                        { MoonflyViolet }, -- FinderType     xxx links to MoonflyViolet
     CallHierarchyIcon                                                                 { MoonflyViolet }, -- CallHierarchyIcon xxx links to MoonflyViolet
     RainbowDelimiterViolet                                                            { MoonflyViolet }, -- RainbowDelimiterViolet xxx links to MoonflyViolet
-    MoonflyCrimson                                                                    { fg="#ff5189", }, -- MoonflyCrimson xxx guifg=#ff5189
+    MoonflyCrimson                                                                    { fg="#ee5396", }, -- MoonflyCrimson xxx guifg=#ff5189
     Exception                                                                         { MoonflyCrimson }, -- Exception      xxx links to MoonflyCrimson
     gitCommitDiscardedFile                                                            { MoonflyCrimson }, -- gitCommitDiscardedFile xxx links to MoonflyCrimson
     diffChanged                                                                       { MoonflyCrimson }, -- diffChanged    xxx links to MoonflyCrimson
