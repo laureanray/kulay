@@ -159,7 +159,7 @@ local theme = lush(function(injected_functions)
     NvimIdentifier                                                                    { IdentifierItalic }, -- NvimIdentifier xxx links to Identifier
     netrwVersion                                                                      { Identifier }, -- netrwVersion   xxx links to Identifier
     luaFunc                                                                           { Identifier }, -- luaFunc        xxx links to Identifier
-    Conditional                                                                       { fg="#cf87e8", }, -- Conditional    xxx guifg=#cf87e8
+    Conditional                                                                       { fg="#be95ff", }, -- Conditional    xxx guifg=#cf87e8
     sym"@conditional"                                                                 { Conditional }, -- @conditional   xxx links to Conditional
     luaCondElse                                                                       { Conditional }, -- luaCondElse    xxx links to Conditional
     luaCond                                                                           { Conditional }, -- luaCond        xxx links to Conditional
